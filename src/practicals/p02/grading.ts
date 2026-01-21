@@ -1,11 +1,10 @@
 let word = (process.argv[2])
-let Input1 = Number(word);
+let Input1 = parseFloat(word);
 
 
 
-if(Number.isNaN(Input1)||(Input1 < 0) || (Input1 > 100) || word === '' || !word ){
+if(Number.isNaN(Input1)||(Input1 < 0) || (Input1 > 100)){
    console.log("Invalid Input");
-   
 }
 
 if(Input1 >= 50 && Input1 < 60){
