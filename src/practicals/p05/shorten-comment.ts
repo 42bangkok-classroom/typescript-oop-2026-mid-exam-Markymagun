@@ -1,5 +1,19 @@
-const comment = "TypeScript is a strongly typed programming language"
+let count = Number(process.argv[2]);
 
-function shortenComment(comment: string): string {
-  // Write your code below
+if (Number.isNaN(count) || count <= 1) {
+  process.exit();
 }
+
+for (let i = 1; i <= count; i++) {
+    let row =""
+  for(let j=1;j<=count-1;j++)
+    console.log("")
+  
+  for(let j= 1 ;j<=1;j++)
+    row +=j ;
+  }
+  {
+  console.log(count);
+}
+
+export { };
