@@ -1,9 +1,9 @@
 let word = (process.argv[2])
-let Input1 = parseFloat(word);
+let Input1 = Number(word);
 
 
 
-if(Number.isNaN(Input1)||(Input1 < 0) || (Input1 > 100)){
+if(Number.isNaN(Input1)||(Input1 < 0) || (Input1 > 100) || word === '' || !word ){
    console.log("Invalid Input");
 }
 
