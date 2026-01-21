@@ -4,10 +4,10 @@ let Input1 = Number(word);
 
 
 if(Number.isNaN(Input1)||(Input1 < 0) || (Input1 > 100) || word === '' || !word ){
-   console.log("Invalid Input");
+   console.log("Invalid input");
 }
 
-if(Input1 >= 50 && Input1 < 60){
+else if(Input1 >= 50 && Input1 < 60){
   console.log("Grade is D");
 }
 
