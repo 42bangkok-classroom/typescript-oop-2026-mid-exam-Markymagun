@@ -1,7 +1,7 @@
 let count = Number(process.argv[2]);
 
 if (Number.isNaN(count) || count <= 1) {
-  process.exit();
+  
 }
 
 for (let i = 1; i <= count; i++) {
