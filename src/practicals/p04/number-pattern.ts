@@ -1,19 +1,16 @@
-let count = Number(process.argv[2]);
+let Num1 = Number(process.argv[2]);
 
-if (Number.isNaN(count) || count <= 1) {
-  
+
+for (let i = 1; i <=Num1 ; i++) {
+  let row = ""
+ for (let j = 1; j <=Num1 ; j++) {
+    if(j<=Num1-i){
+        row+=" "
+    }else{
+        row+=(j-(Num1-i))
+    }
+}
+console.log(row)
 }
 
-for (let i = 1; i <= count; i++) 
-  { let row =""
-  for (let j = 1; j<= count - i ; j++) {
-    row += "" ;
-  }
-  for(let j = 1;j<=count;j++) {
-    let row=j;
-    row+=row;
-  }
-  console.log(row);
-}
-
-export { };
+export{}
